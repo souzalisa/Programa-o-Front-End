@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <title>Criador de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+    
+    <div>
+
+        <h1>To do List</h1>
+        <p>(Lista de tarefas)</p>
+
+    <input type="text" id="nome"><br><br>
+    <input type="date" id="data"><br><br>
+    <button onclick="AddTarefa()">ADICIONAR</button>
+    <button onclick="DelTarefa()">REMOVER</button>
+
+    <p id="contador">0</p>
+
+    <ul id="lista_tarefa"></ul>
+    
+    </div>
+    
+
+    <script>
+        function AddTarefa() {
+            let contar = document.getElementById("contador").value;
+            contador.textContent++;
+            let texto = document.getElementById("nome").value;
+            let date = document.getElementById("data").value;
+            let li = document.createElement("li");
+            let data = document.createElement("data");
+            li.textContent = texto + "-" + date;
+            let lista = document.getElementById("lista_tarefa");
+            lista.appendChild(li);
+            lista.appendChild(data);
+        }
+
+          
+    </script>
+
+     </body>
+</html>
